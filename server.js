@@ -29,7 +29,7 @@ app.post('*', (req, res) => {
     let response = `CON NIYONSENGA EDITHE shyiramo kode wishyuriraho`
     res.send(response)
   }  
-   else if (text == '3575') {
+   else if (text == '1199670003005067*3575') {
     // Business logic for first level response
     let response = `CON NIYONSENGA EDITHE urishyura 230`
     res.send(response)
