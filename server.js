@@ -30,9 +30,7 @@ app.post('*', (req, res) => {
     res.send(response)
   } else if (text == '3575') {
     // Business logic for first level response
-    let response = `CON NIYONSENGA EDITHE urishyura 120 frw
-    1.wemeze kwishyura
-    2.kubihagarika`
+    let response = `CON NIYONSENGA EDITHE urishyura 120 frw`
     res.send(response)
   }  
   
