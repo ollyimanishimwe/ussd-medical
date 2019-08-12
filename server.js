@@ -8,11 +8,6 @@ const port = process.env.PORT || 3030
 app.use(logger('dev'))         
 app.use(bodyParser.json())    
 app.use(bodyParser.urlencoded({extended: true}))
-// const readline = require('readline').createInterface({
-//     input: process.stdin,
-//     output: process.stdout
-//   })
-
 
 app.get('*', (req, res) => {
   res.send('CON USSD MEDICAL PAYMENT')
@@ -25,13 +20,7 @@ app.post('*', (req, res) => {
     let response = `CON IKAZE KURI MEDICAL PAYMENT`
     res.send(response)
   } 
-  else if (text != '1199670003005067') {
-    // Business logic for first level response
-    let response = `END ---MEDICAL PAYMENT---
-    
-    Ntibyakunze`
-    res.send(response)
-  }
+
   else if (text == '1199670003005067') {
     // Business logic for first level response
     let response = `CON ---MEDICAL PAYMENT---
@@ -40,16 +29,8 @@ app.post('*', (req, res) => {
     shyiramo kode wishyuriraho`
     res.send(response)
   }  
-  
-  else if (text != '1199670003005067*3575') {
-    // Business logic for first level response
-    let response = `END ---MEDICAL PAYMENT---
 
-    Ntibyakunze mwongere mugerageze`
-    res.send(response)
-  }
-
-   else if (text == '1199670003005067*3575') {
+  else if (text == '1199670003005067*3575') {
     // Business logic for first level response
     let response = `CON ---MEDICAL PAYMENT--- 
     
