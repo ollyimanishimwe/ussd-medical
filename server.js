@@ -17,7 +17,8 @@ app.post('*', (req, res) => {
   let {sessionId, serviceCode, phoneNumber, text} = req.body
   if (text == '') {
     // This is the first request. Note how we start the response with CON
-    let response = `CON IKAZE KURI MEDICAL PAYMENT`
+    let response = `CON IKAZE KURI MEDICAL PAYMENT
+      shyiramo imibare y'indangamuntu`
     res.send(response)
   } 
 
