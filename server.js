@@ -35,7 +35,10 @@ app.post('*', (req, res) => {
     // Business logic for first level response
     let response = `CON ---MEDICAL PAYMENT--- 
     
-    NIYONSENGA EDITHE urishyura 230
+    NIYONSENGA EDITHE urishyura:
+    
+    amafaranga: 230
+    
     kanda:
 
     1.kwemeza kwishyura
