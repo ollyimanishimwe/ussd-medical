@@ -28,12 +28,12 @@ app.post('*', (req, res) => {
     // Business logic for first level response
     let response = `CON NIYONSENGA EDITHE shyiramo kode wishyuriraho`
     res.send(response)
-  } else if (text == '3575') {
+  }  
+   else if (text == '3575') {
     // Business logic for first level response
-    let response = `CON NIYONSENGA EDITHE urishyura 120 frw`
+    let response = `CON NIYONSENGA EDITHE urishyura 230`
     res.send(response)
   }  
-  
   else {
     res.status(400).send('Bad request!')
   }
