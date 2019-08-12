@@ -26,14 +26,51 @@ app.post('*', (req, res) => {
     res.send(response)
   } else if (text == '1199670003005067') {
     // Business logic for first level response
-    let response = `CON NIYONSENGA EDITHE shyiramo kode wishyuriraho`
+    let response = `CON ---MEDICAL PAYMENT---
+    AMAZINA : NIYONSENGA EDITHE 
+    shyiramo kode wishyuriraho`
+    res.send(response)
+  }  
+  else if (text != '1199670003005067') {
+    // Business logic for first level response
+    let response = `END ---MEDICAL PAYMENT---
+    Ntibyakunze`
     res.send(response)
   }  
    else if (text == '1199670003005067*3575') {
     // Business logic for first level response
-    let response = `CON NIYONSENGA EDITHE urishyura 230`
+    let response = `CON ---MEDICAL PAYMENT--- 
+    
+    NIYONSENGA EDITHE urishyura 230
+    kanda:
+    1.kwemeza kwishyura
+    2.kubihagarika`
     res.send(response)
   }  
+   else if (text != '1199670003005067*3575') {
+    // Business logic for first level response
+    let response = `END ---MEDICAL PAYMENT---
+    Ntibyakunze mwongere mugerageze`
+    res.send(response)
+  }  
+
+  else if (text == '1199670003005067*3575*1') {
+    // Business logic for first level response
+    let response = `END ---MEDICAL PAYMENT--- 
+    
+    NIYONSENGA EDITHE kwishyura byakunze
+    
+    Murakoze kwishyura`
+    res.send(response)
+  }
+  else if (text == '1199670003005067*3575*2') {
+    // Business logic for first level response
+    let response = `END ---MEDICAL PAYMENT--- 
+    
+    Murakoze`
+    res.send(response)
+  }
+
   else {
     res.status(400).send('Bad request!')
   }
