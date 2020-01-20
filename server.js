@@ -52,16 +52,15 @@ app.post('*', (req, res) => {
     
     Olly Imanishimmwe  kwishyura byakunze
     
-    Murakoze kwishyura
-    (thank you)`
+    (payment done thank you)`
     res.send(response)
   }
   else if (text == '1199780092756207*3575*2') {
     // Business logic for first level response
     let response = `END ---MEDICAL PAYMENT--- 
     
-    Murakoze
-    (thank you)`
+    Igikorwa cyirahagaritswe Murakoze
+    (session ended thank you)`
     res.send(response)
   }
 
