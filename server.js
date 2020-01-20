@@ -18,46 +18,50 @@ app.post('*', (req, res) => {
   if (text == '') {
     // This is the first request. Note how we start the response with CON
     let response = `CON IKAZE KURI MEDICAL PAYMENT
-      shyiramo imibare y'indangamuntu`
+      shyiramo imibare y'indangamuntu
+      (submit your id No)`
     res.send(response)
   } 
 
-  else if (text == '1199670003005067') {
+  else if (text == '1199780092756207') {
     // Business logic for first level response
     let response = `CON ---MEDICAL PAYMENT---
 
-    Amazina : NIYONSENGA EDITHE 
-    shyiramo kode wishyuriraho`
+    Amazina (names): Olly Imanishimmwe 
+    shyiramo kode wishyuriraho
+    (submit the code sent in sms)`
     res.send(response)
   }  
 
-  else if (text == '1199670003005067*3575') {
+  else if (text == '1199780092756297*3575') {
     // Business logic for first level response
     let response = `CON ---MEDICAL PAYMENT--- 
     
-    NIYONSENGA EDITHE urishyura: frw 230.
+    Olly Imanishimmwe  urishyura (you will pay): frw 230.
     
     kanda:
 
-    1.kwemeza kwishyura
-    2.kubihagarika`
+    1.kwemeza kwishyura (yes pay)
+    2.kubihagarika (no)`
     res.send(response)
   }  
    
-  else if (text == '1199670003005067*3575*1') {
+  else if (text == '1199780092756297*3575*1') {
     // Business logic for first level response
     let response = `END ---MEDICAL PAYMENT--- 
     
-    NIYONSENGA EDITHE kwishyura byakunze
+    Olly Imanishimmwe  kwishyura byakunze
     
-    Murakoze kwishyura`
+    Murakoze kwishyura
+    (thank you)`
     res.send(response)
   }
-  else if (text == '1199670003005067*3575*2') {
+  else if (text == '1199780092756297*3575*2') {
     // Business logic for first level response
     let response = `END ---MEDICAL PAYMENT--- 
     
-    Murakoze`
+    Murakoze
+    (thank you)`
     res.send(response)
   }
 
