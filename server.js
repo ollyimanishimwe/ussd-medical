@@ -33,7 +33,7 @@ app.post('*', (req, res) => {
     res.send(response)
   }  
 
-  else if (text == '1199780092756297*3575') {
+  else if (text == '1199780092756207*3575') {
     // Business logic for first level response
     let response = `CON ---MEDICAL PAYMENT--- 
     
@@ -46,7 +46,7 @@ app.post('*', (req, res) => {
     res.send(response)
   }  
    
-  else if (text == '1199780092756297*3575*1') {
+  else if (text == '1199780092756207*3575*1') {
     // Business logic for first level response
     let response = `END ---MEDICAL PAYMENT--- 
     
@@ -56,7 +56,7 @@ app.post('*', (req, res) => {
     (thank you)`
     res.send(response)
   }
-  else if (text == '1199780092756297*3575*2') {
+  else if (text == '1199780092756207*3575*2') {
     // Business logic for first level response
     let response = `END ---MEDICAL PAYMENT--- 
     
