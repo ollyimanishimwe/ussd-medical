@@ -40,7 +40,6 @@ app.post('*', (req, res) => {
     Olly Imanishimmwe  urishyura (you will pay): frw 230.
     
     kanda:
-
     1.kwemeza kwishyura (yes pay)
     2.kubihagarika (no)`
     res.send(response)
@@ -50,8 +49,7 @@ app.post('*', (req, res) => {
     // Business logic for first level response
     let response = `END ---MEDICAL PAYMENT--- 
     
-    Olly Imanishimmwe  kwishyura byakunze
-    
+    Olly Imanishimmwe  kwishyura byakunze    
     (payment done thank you)`
     res.send(response)
   }
